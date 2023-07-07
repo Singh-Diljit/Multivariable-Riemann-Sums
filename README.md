@@ -10,14 +10,10 @@ While the code requires no packages to run, NumPy or SymPy are useful to define 
 
 ```python
 import numpy as np #used for examples
-    
-#Function to integrate
->>> def f(vector):
-		x, y = vector
-		return np.sin(x) * np.cos(y)
-	
-#Region of integration
->>> reg = [(0, np.pi), (np.pi, 0)]
+>>> def f(vector): #Function to integrate
+	x, y = vector
+	return np.sin(x) * np.cos(y)
+>>> reg = [(0, np.pi), (np.pi, 0)] #Region of integration
     
 >>> est_integral(reg, f, .1)
 >>> -0.28235318442224444
